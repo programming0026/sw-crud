@@ -14,6 +14,5 @@ public interface ProductR2dbcRepository extends ReactiveCrudRepository<ProductEn
     /** Busca por nombre sin distinguir mayúsculas. */
     Flux<ProductEntity> findByNameContainingIgnoreCase(String name);
 
-    /** Indica si hay productos en la categoría. */
     Mono<Boolean> existsByCategoryId(Long categoryId);
 }

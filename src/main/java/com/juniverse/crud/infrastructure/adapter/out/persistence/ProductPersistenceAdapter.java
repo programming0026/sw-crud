@@ -58,7 +58,6 @@ public class ProductPersistenceAdapter implements ProductRepositoryPort {
         return repository.deleteById(id);
     }
 
-    /** Indica si la categoría tiene productos. */
     @Override
     public Mono<Boolean> existsByCategoryId(Long categoryId) {
         return repository.existsByCategoryId(categoryId);

@@ -42,9 +42,5 @@ public interface ProductRepositoryPort {
      */
     Mono<Void> deleteById(Long id);
 
-    /**
-     * Indica si la categoría tiene productos.
-     * @param categoryId identificador de la categoría
-     */
     Mono<Boolean> existsByCategoryId(Long categoryId);
 }
